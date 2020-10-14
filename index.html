@@ -4,25 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apurba's P5.JS Sketches</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
-        body{
-            text-align: center;
+        .card-image{
+            width: 100%;
+            height: 16em;
         }
     </style>
 </head>
 <body>
-    <h2>Miscellaneous P5.JS sketches</h2>
 
-    <h4>Tree related Physics simulations</h4>
-    <p><a href="fractal_tree/index.html">Fractal Tree</a></p>
-    <p><a href="gravity_tree/index.html">Gravity Tree</a></p>
-    <p><a href="mutant_tree/index.html">Mutant Tree</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class = "jumbotron">
+                    <h1 class="display-4" style="text-align: center;">Miscellaneous P5.JS sketches by Apurba</h1>
+                    <blockquote class="blockquote" style="text-align: center;">
+                        <p class="mb-0">“I walked in universes where the laws of physics were devised by the mind of a mad man.”</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">Doctor Who</cite></footer>
+                      </blockquote>
+                    <p class="lead">The following is an assortment of P5.JS sketches (JavaScript programs that manipulate HTML5 Canvas) I had coded from time to time. They involve coding
+                        up a small physics engine with friction, gravity and other forces.
+                    </p>
+                    <p class= "lead">Each of the following programs employ a "Mover" class, which has information in vector form such as the object's location, velocity and acceleration. Other than methods to display and move the objects in the canvas, the Mover class also has an "applyForce( )" method, which enables the objects to experience any force in vector form.
+                    Afterwards, multiple objects were generated using JavaScript arrays.</p>
+                </div>
+            </div> 
+        </div>
+        <!--Tree inspired stuff-->
+        <div class = "row">
+            <div class = "col-12 col-md-12 col-lg-12" style="margin-bottom: 2em;">
+                <h3>Tree inspired Physics Simulations</h3>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card" style="text-align: center;">
+                    <img src="assets/fractal_tree.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Fractal Tree</h5>
+                      <a href="fractal_tree/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card" style="text-align: center;">
+                    <img src="assets/gravity_tree.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Gravity Tree</h5>
+                      <a href="gravity_tree/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card"  style="text-align: center;">
+                    <img src="assets/mutant_tree.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Mutant Tree</h5>
+                      <a href="mutant_tree/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
 
-    <h4>Natured inspired Physics simulations</h4>
-    <p><a href="fireflies/index.html">Fireflies</a></p>
-    <p><a href="gust_of_wind/index.html">Gust of wind</a></p>
-    <p><a href="Moth/index.html">Moth</a></p>
-    <p><a href="perlin_noise/index.html">Perlin Noise Creatures</a></p>
-    <p><a href="weaving_strings_grid/index.html">String grid</a></p>
+        <!--Nature inspired stuff-->
+        <div class = "row" style="margin-top: 3em;">
+            <div class = "col-12 col-md-12 col-lg-12" style="margin-bottom: 2em;">
+                <h3>Nature inspired Physics Simulations</h3>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card" style="text-align: center;">
+                    <img src="assets/firefly.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Firefly in the night</h5>
+                      <a href="fireflies/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card" style="text-align: center;">
+                    <img src="assets/gust_of_wind.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Gust of Wind</h5>
+                      <a href="gust_of_wind/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card"  style="text-align: center;">
+                    <img src="assets/moth.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Moth</h5>
+                      <a href="Moth/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class = "row" style="margin-top: 3em;">
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card" style="text-align: center;">
+                    <img src="assets/perlin_noise.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Perlin Noise Waves</h5>
+                      <a href="perlin_noise/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card" style="text-align: center;">
+                    <img src="assets/string_grid.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">Stringy Grid</h5>
+                      <a href="weaving_strings_grid/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-12 col-md-4 col-lg-4">
+                <div class="card"  style="text-align: center;">
+                    <img src="assets/my_head.png" class="card-img-top card-image">
+                    <div class="card-body">
+                      <h5 class="card-title">My big head</h5>
+                      <a href="my_big_head/index.html" class="btn btn-primary">View Sketch</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row" style = "margin-top: 3em;">
+            <div class="col-12 col-md-12 col-lg-12" style="text-align: center;">
+                <p><b>Made with <i class="fas fa-heart"></i> by Apurba</b></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
